@@ -38,7 +38,7 @@ import rospy
 from sensor_msgs.msg import JointState
 import hrl_geom.transformations as trans
 from hrl_geom.pose_converter import PoseConv
-from kdl_parser import kdl_tree_from_urdf_model
+from pykdl_utils.kdl_parser import kdl_tree_from_urdf_model
 from urdf_parser_py.urdf import Robot
 
 def create_kdl_kin(base_link, end_link, urdf_filename=None, description_param="/robot_description"):
